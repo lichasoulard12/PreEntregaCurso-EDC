@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TYPOGRAPHY LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="../css/styles.css"> 
+
+    <title>CURSO JS</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-div">
+            <a href="../index.html"> 
+                <img class="logo" src="../img/default-img.jpg" alt="Logo del sitio web"> 
+            </a>
+            <h1> PÁGINA PRUEBA CURSO JS </h1>
+        </div>
+
+        <!-- NAV MENU -->
+        <nav class="nav">
+            <ul>
+                <li class="nav-item">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about-us.html" style="text-decoration: underline;">About US</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main class="about-us-main">
+        <div class="welcome-text">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>SI QUERES CONOCERNOS...</p>
+        </div>
+
+        <div class="about-us-main-div">
+             <h3>QUIENES SOMOS</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, corporis perferendis. Ipsum impedit numquam perferendis error adipisci at eligendi est? Eaque illo perferendis consectetur officia, dolorem vero assumenda sit repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ad corrupti asperiores? Nostrum minima molestiae corrupti necessitatibus aperiam, incidunt quibusdam dolor repudiandae officiis amet fuga ducimus ad cumque sint rerum.</p>
+        </div>
+        <br>
+        <section class="about-us-socials">
+            <h3>Nuestras redes sociales</h3>
+            <ul>
+                <li>X:<a href=""> @</a></li>
+                <li>Facebook:<a href=""> @</a></li>
+                <li>Instagram:<a href=""> @</a></li>
+            </ul>
+        </section>
+        <br>
+        <section>
+            <h3>Comentanos!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia omnis alias delectus odio cupiditate tenetur rerum tempora quia quam nesciunt, quasi sint facilis! Quisquam sapiente voluptate pariatur reprehenderit culpa in!</p>
+            <form action="https://formspree.io/f/{form_id}" method="post">
+                <fieldset class="formulario">
+                    <legend> ESCRIBINOS TU OPINIÓN </legend>
+                    <label for="names">Nombre y apellido:</label>
+                    
+                    <input type="text" name="names" id="names" placeholder="Nombre y apellido" required>
+                    <label for="comentario">Escribí tu comentario:</label>
+
+                    <textarea name="comentario" id="comentario" rows="5" cols="35" required placeholder="Tu comentario..."></textarea>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <h3>Todos los derechos reservados</h3>
+        <div class="icons">
+            <a href=""><i>X</i></a>
+            <a href=""><i>Facebook</i></a>
+            <a href=""><i>Instagram</i></a>
+        </div>
+    </footer>
+</body>
+</html>
