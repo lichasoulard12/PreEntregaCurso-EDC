@@ -7,9 +7,16 @@ html{
     font-family: "Montserrat", sans-serif;
 }
 
+/* --- BODY --- */
+body{
+    height: 100vh;
+}
+
 /* --- HEADER --- */
 header{
     background-color: #f0f0f0;
+    border-bottom-left-radius: 42px;
+    border-bottom-right-radius: 42px;
 }
 .header-div{
     display:flex;
@@ -21,12 +28,6 @@ header{
     margin: 10px;
 }
 
-/* --- BODY --- */
-body{
-    height: 100vh;
-}
-
-
 /* --- NAV MENU --- */
 .nav{
     display: flex;
@@ -34,7 +35,8 @@ body{
     background-color: #e2d3d3;
     padding:10px;
     border: 2px solid #000;
-    border-radius: 10px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
 }
 .nav ul{
     display: flex; 
@@ -78,8 +80,19 @@ body{
 /* --- MAIN --- */
 main{
     font-size: 19px;
-    margin: 5px;
+    margin: 5px 15px;
     padding: 5px;
+}
+main h3{
+    font-size: 22px;
+    text-decoration: underline;
+    margin-bottom: 6px;
+}
+main p{
+    text-indent: 15px;
+}
+main hr{
+    margin: 18px 0 16px 0;
 }
 
 .welcome-text{
@@ -91,37 +104,36 @@ main{
     box-shadow: 2px 2px 3px black;
     max-width: 50%;
 }
-
-
-/* --- MAIN (INDEX) --- */
-.index-main-section img{
-    width:55vw;
-    box-shadow: 2px 2px 5px black;
-}
-.art-1, .art-2{
-    padding:12px;
-    border: 1px solid #000;
-    border-radius:5px;
-    box-shadow: 2px 2px 5px black;
-}
-.art-1{
-    margin-bottom: 15px;
+.welcome-text p{
+    text-indent: 0;
 }
 
 /* --- FOOTER --- */
 .footer{
     display: flex;
-    justify-content: center;
+    align-items: center;
     background-color: #0a0a0a;
-    padding: 15px;
-    border: 1px solid #171717;
+    margin-top: .7rem;
+    padding: .5rem;
     color: white;
+}
+.footer h4{
+    text-align: center;
+    font-size: 20px;
+    margin: 0.5rem auto;
+}
+.footer p{
+    margin: .5rem 0;
 }
 .footer .icons{
     display: flex;
+    align-items: center;
     position:absolute;
     right: 10px;
-    padding: 5px;
+    
+}
+.icons h5{
+    font-size: 1rem;
 }
 .icons a{
     margin: 0 5px;
@@ -133,19 +145,35 @@ main{
     text-decoration: none;
 }
 .icons a:hover{
+    text-decoration: underline;
     transform: scale(1.1);
 }
 
 
 /* -- PÁGINAS -- */
 
-/*  --- ABOUT US --- */
-
-.about-us-main h3{
-    font-size: 20px;
-    text-decoration: underline;
-    margin-bottom: 3px;
+/* --- MAIN (INDEX) --- */
+.index-main-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
 }
+.index-main-section img{
+    width:55%;
+    box-shadow: 2px 2px 5px black;
+}
+.index-main-section img:hover{
+    transform: scale(1.02);
+    transition: .3s ease-in-out;
+}
+.art-1, .art-2, .art-3, .art-4, .art-5, .art-6{
+    padding:12px;
+    border: 1px solid #000;
+    border-radius:5px;
+    box-shadow: 2px 2px 5px black;
+}
+
+/*  --- ABOUT US --- */
 .about-us-main-div{
     margin-bottom: 8px;
 }
@@ -160,13 +188,9 @@ main{
 }
 
 /* --- CONTACT --- */
-.contact-main-div h3{
-    font-size: 20px;
-    text-decoration: underline;
-    margin-bottom: 3px;
-}
 
-/* FORMULARIO - CONTACT */
+
+/* FORMULARIO - ABOUT US/CONTACT */
 .formulario{
     margin: 10px 0;
     padding: 7px;
