@@ -203,7 +203,6 @@ h4{
 }
 .misiones-noticias img{
     width:55%;
-    box-shadow: 2px 2px 5px black;
     transition: transform 0.3s ease;
 }
 .misiones-noticias img:hover{
@@ -213,7 +212,6 @@ h4{
     padding:12px;
     border: 2px solid #f0f0f0;
     border-radius:5px;
-    box-shadow: 2px 2px 5px black;   
 }
 .arts a{
     color: white;
@@ -288,5 +286,136 @@ input::placeholder{
 /* --- MEDIA QUERIES --- */
 
 /* MEDIA QUERIE TABLET */
+@media (min-width: 601px) and (max-width: 1023px){
+    /* --- HEADER --- */
+    .header{
+        text-align: center;
+    }
+    .nav ul:first-child{
+        align-items: center;
+        margin-left: 15px;
+    }
+    .nav ul:last-child{
+        margin-right: 15px;
+    }
+
+    /* --- MAIN --- */
+    .main-header .welcome-text{
+        margin:5vh auto;
+        max-width: 80%;
+    }
+    .main-section div, .main-section h3{
+        text-align: center;
+    }
+        /* PAG. Misiones Espaciales - Grid */
+    .misiones-noticias{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .arts{
+        text-align: center;
+    }
+    .arts p{
+        text-align: left;
+    }
+    .arts p:last-of-type{
+        text-align: center;
+    }
+        /* PAG. Sobre Nosotros - Form */
+    form{
+        display: flex;
+        justify-content: center;
+    }
+    .formulario button{
+        margin: 7px auto 5px auto;
+    }
+
+    /* --- FOOTER --- */
+    .footer h4{
+        font-size: 18px;
+        margin: .5rem 4rem;
+    }
+    .footer p{
+        margin: .5rem 0 .5rem 10px;
+    }
+    .footer .icons{
+        display: block;
+        text-align: center;
+    }
+}
 
 /* MEDIA QUERIE CELULAR */
+@media (max-width: 600px){
+    /* --- HEADER --- */
+    .header{
+        text-align: center;
+    }
+    .header-div h1{
+        margin-right: 20px;
+    }
+    .logo{
+        width: 100px;
+        height: 85px;
+        margin: 7px;
+    }
+    .nav ul{
+        display: inline;
+    }
+
+    /* --- MAIN --- */
+    .welcome-text{
+        margin: 1.5vh auto;
+        padding: 15px;
+        max-width: 75%;
+    }
+    .main-header-div{
+        padding: 7px;
+    }
+    .main-section div, .main-section h3{
+        text-align: center;
+    }
+    /* PAG. Misiones Espaciales - Grid */
+    .main-section iframe{
+        width: 100%;
+    }
+    .misiones-noticias{
+        display: flex;
+        flex-direction: column;
+    }
+    .arts{
+        text-align: center;
+    }
+    .arts p{
+        text-align: left;
+    }
+    .arts p:last-of-type{
+        text-align: center;
+    }
+    /* PAG. Sobre Nosotros - Form */
+    .about-us-socials li{
+        margin-left: 6px;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+    }
+    .formulario button{
+        margin: 5px auto 3px auto;
+    }
+
+    /* --- FOOTER --- */
+    .footer h4{
+        font-size: 17px;
+        margin: .5rem 13px .5rem auto;
+    }
+    .footer .icons{
+        position: initial;
+        display: block;
+    }
+    .icons h5{
+        font-size: 15px;
+    }
+    .icons a{
+        margin: 0 1px;
+    }
+}
