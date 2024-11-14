@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html{
-    font-family: "Space Grotesk", "Montserrat", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 /* --- BODY --- */
@@ -29,9 +29,10 @@ header{
     border: 2px solid black;
 }
 .logo{
-    width:200px;
+    width:150px;
     height:100px;
     margin: 10px;
+    border-radius: 25%;
 }
 h1{
     background: linear-gradient(to bottom, #000e1c, #00274C);
