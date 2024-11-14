@@ -1,6 +1,5 @@
 ## Descripción
-El proyecto actual va a tratar sobre...
-Por ahora es solo una pagina de prueba, luego se sabrá de lo que tratará
+El proyecto actual va a tratar sobre Exploracion espacial
 
 ## Tecnologías utilizadas
 1. VSC
