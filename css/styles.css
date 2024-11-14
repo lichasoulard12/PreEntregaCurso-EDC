@@ -4,35 +4,46 @@
     box-sizing: border-box;
 }
 html{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Space Grotesk", "Montserrat", sans-serif;
 }
 
 /* --- BODY --- */
 body{
     height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.75)), url(../img/fondo.jpg);
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: auto;
+    background-repeat: repeat;
 }
 
 /* --- HEADER --- */
 header{
-    background-color: #f0f0f0;
+    background-color: #000e1c;
     border-bottom-left-radius: 42px;
     border-bottom-right-radius: 42px;
+    
 }
 .header-div{
     display:flex;
     align-items: center; 
+    border: 2px solid black;
 }
 .logo{
     width:200px;
     height:100px;
     margin: 10px;
 }
+h1{
+    background: linear-gradient(to bottom, #000e1c, #00274C);
+    color:#ADD8E6;
+    border-radius: 13px;
+}
 
 /* --- NAV MENU --- */
 .nav{
     display: flex;
     justify-content: center;
-    background-color: #e2d3d3;
+    background-color: #00274C;
     padding:10px;
     border: 2px solid #000;
     border-bottom-right-radius: 40px;
@@ -45,23 +56,19 @@ header{
 .nav .nav-item{
     display: inline;
     position: relative;
+    
 }
 .nav-item a{
-    color: black;
     text-decoration: none;
     font-size: 18px;
     text-decoration: none; 
-    color: #000; 
+    color: #ADD8E6; 
     padding: 8px 15px 3px 15px; 
     display:block;
 }
-.nav-item a:visited{
-    color: black;
-}
 .nav-item a:hover{
-    color: rgb(97, 79, 79);
+    color: #D4AC0D;
 }
-
 .nav a::after { 
     content: ''; 
     position: absolute; 
@@ -69,8 +76,8 @@ header{
     bottom: 0; 
     height: 2px; 
     width: 0; 
-    background-color: #000; 
-    transition: width 0.3s ease-in-out; 
+    background-color: #D4AC0D; 
+    transition: width 0.4s ease-in-out; 
 }
 .nav a:hover::after {
    width: 100%; 
@@ -80,42 +87,77 @@ header{
 /* --- MAIN --- */
 main{
     font-size: 19px;
-    margin: 5px 15px;
-    padding: 5px;
 }
 main h3{
     font-size: 22px;
     text-decoration: underline;
     margin-bottom: 6px;
+    color: #D4AC0D;
 }
 main p{
     text-indent: 15px;
+    color: white;
 }
 main hr{
-    margin: 18px 0 16px 0;
+    margin: 18px 1% 16px 1%;
+}
+.main-section{
+    margin: 5px 15px;
+    padding: 5px;
+}
+.main-section div img{
+    width: 350px;
+    margin: 10px 5px 5px;
+}
+
+/* INTRO */
+.main-header{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/back-img.jpg) no-repeat center center;
+    background-size:100% 100%;
+    min-height: 550px;
+    position: relative;
+}
+.main-header::after{
+    content: ''; 
+    position: absolute; 
+    bottom: 0; left: 0; 
+    right: 0; 
+    height: 10%; 
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(150, 150, 150, 0.4) 100%);
 }
 
 .welcome-text{
     text-align: center;
-    margin: 20px auto;
+    margin: 15vh auto;
     padding: 20px;
     border: 2px solid black;
     border-radius: 5px;
-    box-shadow: 2px 2px 3px black;
     max-width: 50%;
+    background-color: rgba(255, 255, 255, 0.65);
+}
+.welcome-text h2{
+    color: #00274C;
 }
 .welcome-text p{
     text-indent: 0;
+    color: black;
+}
+.main-header-div{
+    text-align: center;
+    text-decoration: none;
+}
+h4{
+  color: #ADD8E6;
 }
 
 /* --- FOOTER --- */
 .footer{
     display: flex;
     align-items: center;
-    background-color: #0a0a0a;
-    margin-top: .7rem;
+    background-color: #000e1c;
     padding: .5rem;
-    color: white;
+    color: #ADD8E6;
+    margin-top: 18px;
 }
 .footer h4{
     text-align: center;
@@ -137,11 +179,11 @@ main hr{
 }
 .icons a{
     margin: 0 5px;
-    color: white;
+    color: #ADD8E6;
     text-decoration: none;
 }
 .icons a:visited{
-    color: white;
+    color: #ADD8E6;
     text-decoration: none;
 }
 .icons a:hover{
@@ -152,52 +194,60 @@ main hr{
 
 /* -- PÁGINAS -- */
 
-/* --- MAIN (INDEX) --- */
-.index-main-section{
+/* --- MISIONES ESPACIALES --- */
+.misiones-noticias{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
 }
-.index-main-section img{
+.misiones-noticias img{
     width:55%;
     box-shadow: 2px 2px 5px black;
+    transition: transform 0.3s ease;
 }
-.index-main-section img:hover{
+.misiones-noticias img:hover{
     transform: scale(1.02);
-    transition: .3s ease-in-out;
 }
-.art-1, .art-2, .art-3, .art-4, .art-5, .art-6{
+.arts{
     padding:12px;
-    border: 1px solid #000;
+    border: 2px solid #f0f0f0;
     border-radius:5px;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px black;   
+}
+.arts a{
+    color: white;
+    font-style: italic;
+}
+.arts a:hover{
+    color:#D4AC0D;
 }
 
 /*  --- ABOUT US --- */
-.about-us-main-div{
-    margin-bottom: 8px;
+.about-us-socials{
+    color: white;
 }
-
 .about-us-socials li{
     margin: 3px 0;
     margin-left: 15px;
 }
 .about-us-socials a{
     text-decoration: none;
-    color: black;
+    color: white;
+    font-style: italic;
+}
+.about-us-socials a:hover{
+    color:#D4AC0D;
+    text-decoration: underline;
 }
 
-/* --- CONTACT --- */
-
-
-/* FORMULARIO - ABOUT US/CONTACT */
+/* FORMULARIO - ABOUT US */
 .formulario{
     margin: 10px 0;
     padding: 7px;
     max-width: fit-content;
     font-size: 16px;
     border-radius: 10px;
-    border: 2px solid #0a0a0a;
+    border: 2px solid #f0f0f0;
 }
 .formulario legend{
     padding: 0 5px;
@@ -207,24 +257,25 @@ main hr{
     margin-bottom: 5px;
     font-size: 16px;
 }
+.formulario legend, .formulario label{
+    color: #ADD8E6;
+}
 .formulario textarea, .formulario input{
     resize: none;
     border-radius: 2px;
-    box-shadow: 1px 1px 1px black;
     margin-bottom: 5px;
     font-size: 16px;
-    border: 1.5px solid #0a0a0a;
     padding: 3px;
 }
 input::placeholder{
     font-size: 15px;
 }
 .formulario button{
+    display: block;
     padding: 12px 25px;
-    margin-top: 2px;
-    background-color: black;
-    color: white;
-    border: yellow;
+    margin-top: 5px;
+    background-color:#00274C;
+    color: #f0f0f0;
     border-radius: 10px;
 }
 .formulario button:hover{
@@ -233,3 +284,8 @@ input::placeholder{
     cursor: pointer;
 }
 
+/* --- MEDIA QUERIES --- */
+
+/* MEDIA QUERIE TABLET */
+
+/* MEDIA QUERIE CELULAR */
